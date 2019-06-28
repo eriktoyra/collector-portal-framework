@@ -8,7 +8,7 @@ const RadioButtonContainer = styled.div<{ disabled?: Boolean }>(({ disabled }) =
     opacity: disabled ? 0.5 : 1,
 }));
 
-const Input = styled.input(({ theme }) => ({
+const Input = styled.input<{}>(({ theme }) => ({
     appearance: 'none',
     position: 'relative',
     background: 'none',

@@ -56,7 +56,7 @@ const IconButton = styled.button({
     },
 });
 
-const FooterContainer = styled.footer(({ theme }) => ({
+const FooterContainer = styled.footer<{}>(({ theme }) => ({
     background: theme.colors.sidebarBlueDark,
     color: theme.colors.white,
     padding: 20,
@@ -79,7 +79,7 @@ const MenuListItem = styled.li<{ useMarginTop?: boolean }>(({ useMarginTop }) =>
     marginRight: 12,
 }));
 
-const ExternalNavLink = styled.a(({ theme }) => ({
+const ExternalNavLink = styled.a<{}>(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
     padding: 12,

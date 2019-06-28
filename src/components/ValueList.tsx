@@ -5,7 +5,7 @@ const List = styled.dl({
     marginTop: 0,
 });
 
-const Heading = styled.dt(({ theme }) => ({
+const Heading = styled.dt<{}>(({ theme }) => ({
     color: theme.colors.darkGray,
     font: theme.fonts.desktop.small,
 }));

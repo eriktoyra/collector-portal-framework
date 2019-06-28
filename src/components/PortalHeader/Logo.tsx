@@ -2,7 +2,7 @@ import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import styled from '../../';
 
-const Container = styled.div(({ theme }) => ({
+const Container = styled.div<{}>(({ theme }) => ({
     boxSizing: 'border-box',
     height: 128,
     padding: 16,
@@ -20,7 +20,7 @@ const Container = styled.div(({ theme }) => ({
     },
 }));
 
-const Link = styled(RouterLink)(({ theme }) => ({
+const Link = styled(RouterLink)<{}>(({ theme }) => ({
     color: 'inherit',
     textDecoration: 'none',
     position: 'relative',
@@ -35,7 +35,7 @@ const Image = styled.img({
     display: 'block',
 });
 
-const SiteName = styled.div(({ theme }) => ({
+const SiteName = styled.div<{}>(({ theme }) => ({
     textAlign: 'center',
     font: theme.fonts.desktop.xl,
     fontWeight: 700,

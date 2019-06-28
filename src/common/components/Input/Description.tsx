@@ -12,7 +12,7 @@ interface State {
     tooltipIsVisible: boolean;
 }
 
-const Container = styled.div(({ theme }) => ({
+const Container = styled.div<{}>(({ theme }) => ({
     display: 'inline-block',
     width: 20,
     height: 20,

@@ -12,7 +12,7 @@ export interface Tag {
     id: string;
 }
 
-const TagContainer = styled.div(({ theme }) => ({
+const TagContainer = styled.div<{}>(({ theme }) => ({
     padding: '8px 16px',
     marginRight: 8,
     marginTop: 16,

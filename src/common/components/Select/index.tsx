@@ -32,7 +32,7 @@ const SelectFieldContainer = styled.div<{ hasError: boolean; disabled?: boolean 
     },
 }));
 
-const SelectField = styled.select(({ theme }) => ({
+const SelectField = styled.select<{}>(({ theme }) => ({
     font: 'inherit',
     color: 'inherit',
     appearance: 'none',

@@ -3,7 +3,7 @@ import styled from '../../';
 import { MainMenu, MainMenuItem } from './MainMenu';
 import { Logo } from './Logo';
 
-const Container = styled.header(({ theme }) => ({
+const Container = styled.header<{}>(({ theme }) => ({
     position: 'relative',
     width: 280,
     display: 'flex',

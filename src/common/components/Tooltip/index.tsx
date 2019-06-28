@@ -40,7 +40,7 @@ const Outer = styled.div<Props>(({ theme, visible }) => ({
     },
 }));
 
-const Inner = styled.div(({ theme }) => ({
+const Inner = styled.div<{}>(({ theme }) => ({
     display: 'inline-block',
     padding: '4px 8px',
     background: theme.colors.lightGray,

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '../';
 
-const PageHeaderContainer = styled.div(({ theme }) => ({
+const PageHeaderContainer = styled.div<{}>(({ theme }) => ({
     display: 'flex',
     alignItems: 'center',
     overflow: 'hidden',
@@ -26,7 +26,7 @@ const PageHeaderContainer = styled.div(({ theme }) => ({
     },
 }));
 
-const Title = styled.h1(({ theme }) => ({
+const Title = styled.h1<{}>(({ theme }) => ({
     margin: 0,
     font: theme.fonts.desktop.xxl,
     fontWeight: 700,

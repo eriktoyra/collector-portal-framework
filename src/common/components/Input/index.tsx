@@ -70,14 +70,14 @@ const alertStyle = (theme: Theme): CSSObject => ({
     borderBottomRightRadius: theme.borderRadius.small,
 });
 
-export const InputError: any = styled.div(({ theme }) => ({
+export const InputError: any = styled.div<{}>(({ theme }) => ({
     ...alertStyle(theme),
 
     background: theme.colors.red,
     color: theme.colors.white,
 }));
 
-export const InputWarning: any = styled.div(({ theme }) => ({
+export const InputWarning: any = styled.div<{}>(({ theme }) => ({
     ...alertStyle(theme),
 
     background: theme.colors.yellow,

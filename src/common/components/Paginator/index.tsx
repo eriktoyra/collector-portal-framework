@@ -32,7 +32,7 @@ const Chevron = styled.a<ChevronProps>(({ direction, enabled, theme }) => ({
     cursor: enabled ? 'pointer' : 'default',
 }));
 
-const Ellipses = styled.span(({ theme }) => ({
+const Ellipses = styled.span<{}>(({ theme }) => ({
     width: 20,
     display: 'inline-block',
     paddingLeft: 6,

@@ -18,7 +18,7 @@ export interface ListItemProps {
     location?: string;
 }
 
-const LinkItemContainer = styled.li(({ theme }) => ({
+const LinkItemContainer = styled.li<{}>(({ theme }) => ({
     borderBottom: `1px solid ${theme.colors.lightGray}`,
     width: '100%',
     listStyle: 'none',
@@ -43,7 +43,7 @@ const Container = styled.div<{ others: { isClickable: boolean } }>(({ theme, oth
 
 const LinkContainer = Container.withComponent(RouterLink);
 
-const TitleContainer = styled.div(({ theme }) => ({
+const TitleContainer = styled.div<{}>(({ theme }) => ({
     font: theme.fonts.mobile.large,
     color: theme.colors.black,
 
@@ -52,7 +52,7 @@ const TitleContainer = styled.div(({ theme }) => ({
     },
 }));
 
-const DetailsContainer = styled.div(({ theme }) => ({
+const DetailsContainer = styled.div<{}>(({ theme }) => ({
     font: theme.fonts.mobile.large,
     color: theme.colors.black,
 
@@ -64,7 +64,7 @@ const DetailsContainer = styled.div(({ theme }) => ({
     fontWeight: 600,
 }));
 
-const SubTitleContainer = styled.div(({ theme }) => ({
+const SubTitleContainer = styled.div<{}>(({ theme }) => ({
     color: theme.colors.darkGray,
 
     [theme.breakpoints.mobileAndLower]: {
@@ -72,7 +72,7 @@ const SubTitleContainer = styled.div(({ theme }) => ({
     },
 }));
 
-const SubDetailsContainer = styled.div(({ theme }) => ({
+const SubDetailsContainer = styled.div<{}>(({ theme }) => ({
     color: theme.colors.darkGray,
 
     [theme.breakpoints.mobileAndLower]: {
@@ -80,7 +80,7 @@ const SubDetailsContainer = styled.div(({ theme }) => ({
     },
 }));
 
-const ExpandedContainer = styled.div(({ theme }) => ({
+const ExpandedContainer = styled.div<{}>(({ theme }) => ({
     padding: '8px 16px',
 
     [theme.breakpoints.mobileAndLower]: {

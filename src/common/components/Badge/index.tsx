@@ -15,7 +15,7 @@ interface BadgeState {
     tooltipIsVisible: boolean;
 }
 
-const Container = styled.div(({ theme }) => ({
+const Container = styled.div<{}>(({ theme }) => ({
     display: 'inline-block',
     font: theme.fonts.desktop.small,
     fontWeight: 500,
